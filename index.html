@@ -15,72 +15,58 @@
 <!--CUERPO DE LA PÁGINA-->
 <body>
     <!--NAVBAR-->
-    <div class="head">
+    <div id="header">
         <!--ICONO-->
         <img src="./img/16829311.png" alt="foto navbar">
+        <h1> Kanban To - Do | 2veinte</h1>
     </div>
-    <div id="container-main">
-        <!--Contenedor para agregar tareas-->
-        <div id="container-task">
-
-            <!--Nombre del titulo del KanBan-->
-            <div class="titulo-kanban">
-                <!--En este caso 2veinte-->
-                <strong class="label-kanban"> Tareas para agregar </strong>
+    <!--CONTENEDOR QUE ENVUELVE TODO EL CONTENIDO-->
+    <div class="container-main">
+        <!--CONTENEDOR CON CLASE PARA LAS TAREAS-->
+        <div class="container-task">
+            <!--TASK ADD PARA FORMULARIO DE AGREGAR TAREAS-->
+            <div id="task-add">
+            <!--TITULO CON CLASE PARA LAS TAREAS-->
+            <h3 class="titulo-task"> Agregar Tareas </h3>
+            <hr>
+                <form action="submit">
+                    <!--Task Name para rescatar el valor del input-->
+                    <strong>Nombre Tarea</strong>
+                    <input type="text" id="task-name" placeholder="Inserte nombre de la tarea">
+                    <!--Task Desc para rescatar el valor del input-->
+                    <strong>Descripción de la Tarea</strong>
+                    <input type="text" id="task-desc" placeholder="Inserte Descripción de la tarea a realizar">
+                    <!--Task Resp para rescatar el valor del input-->
+                    <strong>Responsable de la tarea</strong>
+                    <input type="text" id="task-resp" placeholder="Inserte al Responsable">
+                    <button type="submit" id="submit">AGREGAR TAREA</button>
+                </form>
+                
             </div>
-
-            <!--Cuerpo del KanBan-->
-            <div class="cuerpo-kanban">
-
-                <!--Se declara el formulario-->
-                <div class="kanban-block form-kanban">
-
-                    <!--Tipos de input declarados-->
-                    <div class="container-inputs">
-                        <strong class="strong-input">Nombre Tarea</strong>
-                        <input type="text" id="tarea-nombre" class="input-text" placeholder="Ingrese el nombre de la tarea...">
-
-                        <strong class="strong-input">Descripción Tarea</strong>
-                        <textarea type="text" id="tarea-desc" class="input-text" placeholder="Describa su tarea..."></textarea>
-
-                        <strong class="strong-input">Responsable de la tarea</strong>
-                        <input type="text" id="responsable" class="input-text" placeholder="Ingrese su nombre o el responsable a cargo...">
-                    </div>
-
-                    <!--Boton para enviar tarea por JavaScript-->
-                    <button type="submit" id="submit"> Enviar Tarea </button>
-                </div>
+        </div>
+        <!--CONTENEDOR PARA LAS TAREAS EN CURSO-->
+        <div class="container-task">
+            <div id="task-curso">
+                <h3 class="titulo-task">Tareas en Curso</h3>
+                <hr>
+            </div>
+        </div>
+        <!--CONTAINER PARA TAREAS PENDIENTES-->
+        <div class="container-task">
+            <div id="task-pend">
+                <h3 class="titulo-task">Tareas Pendientes</h3>
+                <hr>
+            </div>
+        </div>
+        <!--CONTAINER PARA LAS TAREAS REALIZADAS-->
+        <div class="container-task">
+            <div id="task-fin">
+                <h3 class="titulo-task">Tareas Realizadas</h3>
+                <hr>
             </div>
         </div>
 
-        <!--Contenedor para tareas en curso-->
-        <div id="container-realizadas">
-
-            <!--Nombre del titulo del KanBan-->
-            <div class="titulo-kanban">
-                <!--En este caso 2veinte-->
-                <strong class="label-kanban"> Tareas en Curso </strong>
-            </div>
-        </div>
-
-        <!--Contenedor para tareas en curso-->
-        <div id="container-proceso">
-
-            <!--Nombre del titulo del KanBan-->
-            <div class="titulo-kanban">
-                <!--En este caso 2veinte-->
-                <strong class="label-kanban"> Tareas en Proceso </strong>
-            </div>
-        </div>
-
-        <!--Contenedor para las tareas finalizadas-->
-        <div id="container-finish">
-            <!--Nombre del titulo del KanBan-->
-            <div class="titulo-kanban">
-                <!--En este caso 2veinte-->
-                <strong class="label-kanban">Tareas finalizadas</strong>
-            </div>
-        </div>
+    <!--CIERRE DE CONTENEDOR PRINCIPAL-->
     </div>
 </body>
 
