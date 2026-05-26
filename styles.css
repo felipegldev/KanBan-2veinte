@@ -1,0 +1,98 @@
+/* STRONG INPUT */
+.titulo-kanban {
+    color: #ffff;
+}
+
+/* ESTILO NAVBAR */
+.head {
+    background-color: #ffff;
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* ESTILO ICONO */ 
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* ESTILO CONTENEDOR PRINCIPAL */
+#container-main {
+    background-color: #6688DC;
+    display: flex;
+}
+
+/* ESTILO TITULO */
+#titulo-kanban {
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILO CONTENEDOR DE TAREAS */
+#container-task {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #65BECB;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* ESTILO CUERPO DEL KANBAN */
+.cuerpo-kanban {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+/* ESTILO DE TAREAS REALIZADAS */
+#container-realizadas{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    background-color: #035EE6;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* ESTILO DE TAREAS EN PROCESO */
+#container-proceso {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    background-color: #19029F;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* ESTILO DE TAREAS FINALIZADAS */
+#container-finish {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    background-color: #041D4B;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* ESTILO FORMULARIO */
+.kanban-block .form-kanban {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+}
