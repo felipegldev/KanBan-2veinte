@@ -22,23 +22,22 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 300px;
     padding: 20px;
     border-radius: 8px;
+    gap: 20px;
+    height: 900px;
 }
 
 /* ESTILO PARA CONTENEDOR HIJO DE TAREAS */
 .container-task {
-    width: 100%;
     height: max-content;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
-    align-items: stretch; 
-    gap: 15px; /* */
-    padding: 20px;
+    gap: 15px; 
     border-radius: 10px;
+    width: 350px;
 }
 
 /* ESTILOS PARA EL CONTENEDOR DE AGREGAR TAREAS */
@@ -49,6 +48,7 @@ img {
     border-radius: 5px;
 }
 
+/* ESTILO PARA LOS TITULOS DE LAS TAREAS */
 .container-task .titulo-task{
     display: flex;
     justify-content: center; /* Ajusta horizontalmente */
@@ -59,11 +59,14 @@ img {
     padding-bottom: 10px; /* Separación entre el titulo y el contenido de la carta */
 }
 
+
+/* ESTILO PARA EL FORMULARIO DE LAS TAREAS */ 
 #task-add form {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 300px;
+    width: 100%;
 }
 /* ESTILO PARA CUANDO SE CREEN LAS TAREAS */
 .tarjeta_obj {
@@ -76,7 +79,8 @@ img {
     flex-direction: column;
     padding: 15px;
     margin: 10px;
-    width: 300px;
+    width: 200;
+    box-sizing: border-box;
 }
 
 
@@ -84,12 +88,14 @@ img {
 #task-curso {
     background-color: #9AD4D6;
     border-radius: 8px;
+    color: #ffff;
 }
 
 /* ESTILO PARA TAREAS PENDIENTES */
 #task-pend {
     background-color: #3066BE;
     border-radius: 8px;
+    color: #ffff;
 }
 
 /* ESTILO PARA TAREAS FINALIZADAS */
