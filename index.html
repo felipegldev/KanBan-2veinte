@@ -17,7 +17,7 @@
     <!--NAVBAR-->
     <div id="header">
         <!--ICONO-->
-        <img src="./img/16829311.png" alt="foto navbar">
+        <img src="./img/16829311.png" alt="foto navbar" id="logo">
         <h1> Kanban To - Do | 2veinte</h1>
     </div>
     <!--CONTENEDOR QUE ENVUELVE TODO EL CONTENIDO-->
@@ -39,26 +39,31 @@
                     <!--Task Resp para rescatar el valor del input-->
                     <strong>Responsable de la tarea</strong>
                     <input type="text" id="task-resp" placeholder="Inserte al Responsable">
+                    <!--Fecha inicio-->
+                    <strong>Fecha Inicio:</strong>
+                    <input type="date" id="fecha_ini">
+                    <strong>Fecha Fin:</strong>
+                    <input type="date" id="fecha_fin">
                     <button type="submit" id="submit">AGREGAR TAREA</button>
                 </form>
             </div>
         </div>
         <!--CONTENEDOR PARA LAS TAREAS EN CURSO-->
-        <div class="container-task">
+        <div class="container-task contador">
             <div id="task-curso">
                 <h3 class="titulo-task">Tareas en Curso</h3>
                 <hr>
             </div>
         </div>
         <!--CONTAINER PARA TAREAS PENDIENTES-->
-        <div class="container-task">
+        <div class="container-task contador">
             <div id="task-pend">
                 <h3 class="titulo-task">Tareas Pendientes</h3>
                 <hr>
             </div>
         </div>
         <!--CONTAINER PARA LAS TAREAS REALIZADAS-->
-        <div class="container-task">
+        <div class="container-task contador">
             <div id="task-fin">
                 <h3 class="titulo-task">Tareas Realizadas</h3>
                 <hr>

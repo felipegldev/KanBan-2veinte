@@ -11,7 +11,7 @@
 }
 
 /* ESTILO LOGO */ 
-img {
+#logo {
     width: 100px;
     height: 100px;
 }
@@ -79,10 +79,24 @@ img {
     flex-direction: column;
     padding: 15px;
     margin: 10px;
-    width: 200;
     box-sizing: border-box;
 }
 
+/* ESTILO PARA EL ICONO DEL BTN ELIMINAR */
+.supr {
+    width: 20px; /* Ancho del icono */
+    object-fit: contain; /* Evita que la imagen se estire o se deforme */
+}
+
+/* ESTILO PARA EL BOTON ELIMINAR  */
+.tarjeta_obj .btn-danger {
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 12px;
+    width: 100px;
+    align-self: flex-end; /* Ayuda al elemento hijo a tener su propio comportamiento */
+}
 
 /* ESTILO PARA TAREAS EN CURSO */
 #task-curso {
