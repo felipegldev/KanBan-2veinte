@@ -27,8 +27,6 @@ boton.addEventListener("click", () => {
         const tarjeta_task = document.createElement("div");
         const contador_task = Array.from(document.querySelectorAll(".tarjeta_obj"));
 
-        console.log(contador_task.length);
-
         //Hacemos que la tarjeta sea Draggable para el desplazamiento dentro de los componentes
         tarjeta_task.draggable = true;
 
@@ -83,7 +81,6 @@ boton.addEventListener("click", () => {
             e.dataTransfer.setData("text/plain", tarjeta_task.id) 
         });
         
-
         //Funcion para eliminar elementos con boton eliminar
         btn_eli.addEventListener("click", () => {
             alert("¿Esta seguro que desea eliminar esta tarjeta?"); 
